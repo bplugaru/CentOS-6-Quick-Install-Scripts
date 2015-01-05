@@ -6,7 +6,7 @@
 
 source <(curl --insecure https://raw.githubusercontent.com/Eugeny/ajenti/master/scripts/install-rhel7.sh | sh)
 
-yum  install ajenti-v status-v-nginx ajenti-v-nodejs 
+yum  install ajenti-v status-v-nginx ajenti-v-nodejs  -y
 yum install firewalld -y
 
 service ajenti restart
